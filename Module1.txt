@@ -1,0 +1,265 @@
+Module 1 : 
+Database and information
+Database and different database model
+DBMS
+RDBMS
+Datatypes
+constraints
+Module 2 :
+Different SQL statements
+Operators
+Where clause
+Order by clause
+Inbuilt functions
+Group by clause
+Having clause
+subqueries
+Joins
+Normalization
+Class start:- 
+
+Data and information:-
+Any meaningful thing which is present around us in the form of character or number.
+The collection of the data is called the information.
+Eg. a, b, c,................z, 1, 3, 4, 5, etc
+
+
+Information: -
+
+The collection of data is known as information.
+Eg.
+
+(D  I  N  G  A) -> information
+  \ 
+Data
+
+
+Physics: 23       --------> data
+Chemistry: 23
+Average 75.76 ------------> information
+
+Thoughts :  
+Big bucket contains the data and information and will be known as a database.
+Any container holding some data and information then it is called the database.
+Pc lappy, harddisk etc.
+
+Data -> audio, Binary, text,mp4 , etc.
+
+
+Before 80 years:--- thoughts 
+
+How they used to manage the data:-
+
+They used to use the file and write it down.
+After a certain time, different models are introduced.
+
+The database is storage or container, in which we store the data in an organized manner.
+Based on the storing into the database 
+The database is classified into 4 different models.
+Filesystem database model
+Hierarchical database model
+Network database Model
+Relational Database model
+
+
+Everywhere the 4 the approach is used. I mean in the industry.
+
+We used to have multiple individual files.
+Data redundancy is the first major problem
+Searching time is more
+
+What was the issue of this file system model, when it got replaced?
+
+This approach is used during 1950 and 1960, where all the data are
+ stored in the form of numerous physical files, where the files had 
+no relationship among themselves due to which has following drawbacks.
+Data redundancy
+Time taken to search for data/info was more.
+The file system database model is recommended only if the data
+ to be maintained is minimum.
+
+HDM (hirerarchial Database Model)
+Top-bottom approach
+Top to bottom
+
+In this model, the data or info will be stored in the form of a tree-like structure
+ where there will be a partial relationship among the files die to which the data 
+redundancy is reduced a bit and searching became little faster, this model was efficient
+ only when compared with file system database model else it also had some issued.
+Drawbacks:
+
+Data redundancy
+Searching time was more because of unidirectional searching(top-down approach).
+
+
+
+DBMS:
+It is software that is used to store and manage the data present in the database.
+Eg, fox pro, based, XML, fox-base… etc.
+
+
+
+
+
+SQL:-
+
+It is also known as the sequel
+SQL stands for the structured query language
+It was introduced during the year of 1970 s by dc and rf from IBM.
+It is a query language that is provided by RDBMS software to
+ the user using which they can manage the data present inside the
+ relational database.
+SQL is a high-level language.
+SQL is case sensitive language.
+
+
+Figure:- capture 6 
+
+SQL is the query language whereas MySQL is a  relational database.
+
+SQL Terminologies: terms you should know as a database engineer
+
+Entity / relation
+Attribute / fields
+Records / tuples
+Cell
+
+
+The entity is a real-time object present around us, ………
+
+Data types : 
+-> data types are used to specify the type of values and how
+ much value to be stored under a column.
+Datatypes are used along with the col name while creating the table.
+The diff types of datatypes are : 
+Capture 7
+Numeric Data Types: 
+
+Number(size)
+Size represents the number of digits that can be stored.
+This data type is used to store any non-floating information.
+This data type is used to store information like id, phone number,
+ adhar no etc.
+cap8
+
+
+
+21 -may 
+
+SELECT : 
+
+It is a DQL command that is used to display the details of the table.
+Using select we can either display all the details or any
+ selected details from the table.
+To display all the details wee use the * to display the selected details
+ we need to specify the column name as shown in the bellow syntax.
+To display all the details.
+SELECT * FROM TABLE_NAME;
+To display specific details
+ SELECT CN1, CN2, CNN  FIRM TABLE _ NAME;
+
+
+
+
+CREATE TABLE STUDENT(
+SID NUMBER(3),
+SNAME VARCHAR(10),
+SMARKS(4,2)
+);
+
+INSERT INTO STUDENT VALUES(111,’DINGA’,59.30);
+INSERT INTO STUDENT VALUES(121,PINGA,79.30);
+INSERT INTO STUDENT VALUES(141,’LINGA’,89.30);
+
+SELECT * FROM STUDENT;
+
+
+SID      SNAME     SMARKS
+----------------------------------------
+111       DINGA       59.30
+121       PINGA       69.30
+131       LINGA       89.30
+
+
+SELECT SID, SNAME FORM STUDENT;
+
+SID      SNAME    
+----------------------
+111       DINGA  
+121       PINGA  
+131       LINGA   
+
+
+
+>>SHOW  USER;
+// SHOW THE CURRENT USER INSIDE THE DATABASE.
+>>USER IS “SCOTT”
+
+>>SELECT * FROM TAB;
+// DISPLAY ALL THE TABLES PRESENT IN THE DATABASE.
+
+>>DESC TABLE_NAME;
+// DISPLAY THE DESCRIPTION / STRUCTURE OF THE TABLE;
+
+>>CLEAR SCREEN;
+// TO CLEAR THE SCREEN.
+
+
+
+OPERATORS IN SQL : 
+
+OPERATORS ARE USED TO PERFORM SOME OPERATION.
+THE DIFFERENT TYPES OF OPERATOR ARE.
+Arithmetic operator
+ +, -, * , /
+Relational operator
+<,>,<=,>=, != , = 
+Logical operator
+AND, OR
+Special operator
+IN, LIKE, IS, BETWEEN
+
+With respect to arithmetic operator.
+
+2 + 2/2 = 3;
+
+B  O  D  M  A   S  S;
+
+Expressions we have to follow the above BODMAS rule.
+
+
+
+
+
+
+Logical operator : 
+===============
+AND
+
+Both the conditions have to be true, only 
+the output will be true.
+
+C1 AND C2  O/P
+T             T     -> TRUE
+T             F     -> FALSE
+F             T      -> FALSE
+F             F     -> FALSE
+
+
+   OR:
+
+C1  OR   C2  O/P
+T             T     -> TRUE
+T             F     -> TRUE
+F             T      -> TRUE
+F             F     -> FALSE
+
+At least one of the conditions have to be true,
+ only the output will be true.
+
+
+
+
+
+
+
